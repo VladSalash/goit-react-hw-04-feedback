@@ -4,12 +4,7 @@ import { Button } from './FeedbackOptions.styled';
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return options.map(button => {
     return (
-      <Button
-        key={button}
-        type="button"
-        onClick={onLeaveFeedback}
-        name={button}
-      >
+      <Button key={button} onClick={onLeaveFeedback} name={button}>
         {button}
       </Button>
     );
